@@ -4,9 +4,29 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 header {
-  padding: 156px 0 100px;
+  padding: 250px 0 350px;
+  position: relative;
 }
 
 section {
   padding: 150px 0;
+}
+
+.typedContainer{
+  display: block;
+  width: 450px;
+	height: auto;
+	padding: 30px;
+  position: absolute;
+  text-align: left;
+	top: 50%;
+	left: 40%;
+}
+
+ul.navbar-nav > li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-right: 1px solid black;
 }
