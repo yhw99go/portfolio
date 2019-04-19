@@ -1,1 +1,1 @@
-# [danny's portfolio]
+# danny's portfolio
