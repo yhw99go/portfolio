@@ -1,15 +1,28 @@
 /*!
  * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * CAPTAIN ANONYMOUS - Simple Image Overlay Hover
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
+
+ @font-face {
+  font-family:"foundation-icons";
+  src: url("foundation-icons.eot");
+  src: url("foundation-icons.eot?#iefix") format("embedded-opentype"),
+       url("foundation-icons.woff") format("woff"),
+       url("foundation-icons.ttf") format("truetype"),
+       url("foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 header {
-  padding: 250px 0 350px;
+  padding: 25% 0 350px;
   position: relative;
 }
 
 section {
-  padding: 150px 0;
+  padding: 200px 0;
 }
 
 .typedContainer{
@@ -19,8 +32,8 @@ section {
 	padding: 30px;
   position: absolute;
   text-align: left;
-	top: 50%;
-	left: 40%;
+	top: 60%;
+	left: 35%;
 }
 
 ul.navbar-nav > li {
@@ -29,4 +42,187 @@ ul.navbar-nav > li {
   padding-left: 50px;
   padding-right: 50px;
   border-right: 1px solid black;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  padding: 50px 50px 50px 0px;
+}
+
+.wrapper p{
+  vertical-align:middle;
+  position: absolute;
+  padding-left:30px;
+  top: 30%;
+}
+
+.image--cover {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 20px;
+  vertical-align:middle;
+  
+  object-fit: cover;
+  object-position: center left;
+}
+
+.exp_container{
+  padding: 100px 0;
+  float: left;
+}
+
+.exp_container .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.content {
+  position: relative;
+  width: 95%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-left{
+  left: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}
+
+
+.social-links {
+  padding: 40px 0 24px;
+}
+
+.social-links ul{
+  list-style-type: none;
+}
+
+.social-links li {
+  float: left;
+  padding: 0 20px 0 0;
+}
+
+.social-links li a {
+  color: #999;
+  font-size: 3.7em;
+}
+
+a:hover, .social-links li a:hover {
+  color: #01080a;
+}
+
+.col.last, .social-links li.last {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 640px){
+  .exp_container{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    padding: 50% 30px 300px;
+  }
+  .typedContainer{
+    top: 75%;
+    left: 10%;
+  }
+
+  section {
+    padding: 150px 0;
+  }
+
+  ul.navbar-nav > li {
+    border-right: none;
+  }
+
+  .exp_container{
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .wrapper p{
+    position: absolute;
+  }
+
 }
