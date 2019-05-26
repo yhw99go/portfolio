@@ -26,14 +26,9 @@ section {
 }
 
 .typedContainer{
-  display: block;
   width: 450px;
-	height: auto;
 	padding: 30px;
-  position: absolute;
-  text-align: left;
-	top: 60%;
-	left: 35%;
+  margin: auto;
 }
 
 ul.navbar-nav > li {
